@@ -6,17 +6,11 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  useColorScheme,
-  View,
-  Text,
-} from 'react-native';
-
+import { FlatList, SafeAreaView, useColorScheme } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import SearchForm from './src/components/common/SearchForm';
+import SearchForm from './src/components/SearchForm';
+import FlightItem from './src/components/FlightItem';
+import data from './data.json';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,16 +22,14 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View>
-          <SearchForm title="Search prices for your next trip">
-            <Text>123123</Text>
-          </SearchForm>
-        </View>
-      </ScrollView>
+      <SearchForm title="Search prices for your next trip" />
+      <FlatList
+        data={data}
+        renderItem={({ item }) => <FlightItem item={item} />}
+        showsVerticalScrollIndicator={false}
+      />
     </SafeAreaView>
   );
 }
-
 
 export default App;

@@ -1,0 +1,92 @@
+[
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    },
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    },
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    },
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    },
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    },
+    {
+        "price": "E118",
+        "to": {
+            "airline": "Iberia Express",
+            "departAt": "06:50",
+            "arriveAt": "08:50",
+            "duration": "2h50m"
+        },
+        "from": {
+            "airline": "Ryanair",
+            "departAt": "09:50",
+            "arriveAt": "12:50",
+            "duration": "2h50m"
+        }
+    }
+]
