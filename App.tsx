@@ -12,6 +12,7 @@ import {
   StatusBar,
   useColorScheme,
   View,
+  Text,
 } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
@@ -22,23 +23,16 @@ function App(): JSX.Element {
 
   const backgroundStyle = {
     flex: 1,
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: isDarkMode ? Colors.darker : Colors.darker,
   };
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <SearchForm title="Search form" />
+      <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <View>
+          <SearchForm title="Search prices for your next trip">
+            <Text>123123</Text>
+          </SearchForm>
         </View>
       </ScrollView>
     </SafeAreaView>
