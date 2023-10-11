@@ -21,16 +21,16 @@ interface Props {
 
 const FlightItem: React.FC<Props> = ({ item }) => {
   return (
-    <View style={styles.item}>
+    <View style={[styles.item, styles.row, styles.row_between]}>
       <View>
-        <View>
+        <View style={styles.row}>
           <Text>{item.from.departAt}</Text>
-          <Text>{'U+2708'}</Text>
+          <Text>&#128769;</Text>
           <Text>{item.from.arriveAt}</Text>
         </View>
-        <View>
+        <View style={styles.row}>
           <Text>{item.to.departAt}</Text>
-          <Text>{'U+2708'}</Text>
+          <Text>&#128769;</Text>
           <Text>{item.to.arriveAt}</Text>
         </View>
       </View>
@@ -48,9 +48,13 @@ const FlightItem: React.FC<Props> = ({ item }) => {
 const styles = StyleSheet.create({
   item: {
     padding: 10,
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: 'black',
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  row_between: {
+    justifyContent: 'space-between',
   },
 });
 

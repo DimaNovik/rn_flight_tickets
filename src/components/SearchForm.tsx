@@ -3,16 +3,17 @@ import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 interface Props {
   title: string;
+  onSearch(): void;
 }
 
-const SearchForm: React.FC<Props> = ({ title }) => {
+const SearchForm: React.FC<Props> = ({ title, onSearch }) => {
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
   const [departDate, setDepartDate] = useState(new Date());
   const [arrivalDate, setArrivalDate] = useState(new Date());
 
   const onSearchPress = () => {
-    console.log(1);
+    onSearch({ from, to, departDate, departDate });
   };
 
   return (
